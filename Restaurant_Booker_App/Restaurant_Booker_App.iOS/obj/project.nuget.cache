@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "sVOsvMtGtt6yZx1KiGDeQ2VQi2bhiqMdMFO/CU3xSGxiV8tNzzb1Xt5cJWX0w2iH0U77wplC/bII7zVqy7r8Rg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leo.liu\\source\\repos\\Restaurant_Booker_App\\Restaurant_Booker_App\\Restaurant_Booker_App.iOS\\Restaurant_Booker_App.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leo.liu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\leo.liu\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\leo.liu\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

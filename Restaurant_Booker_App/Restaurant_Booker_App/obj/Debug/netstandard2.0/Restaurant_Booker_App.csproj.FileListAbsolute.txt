@@ -1,0 +1,15 @@
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\bin\Debug\netstandard2.0\Restaurant_Booker_App.deps.json
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\bin\Debug\netstandard2.0\Restaurant_Booker_App.dll
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\bin\Debug\netstandard2.0\Restaurant_Booker_App.pdb
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\Restaurant_Booker_App.csproj.AssemblyReference.cache
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\Restaurant_Booker_App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\Restaurant_Booker_App.AssemblyInfoInputs.cache
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\Restaurant_Booker_App.AssemblyInfo.cs
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\Restaurant_Booker_App.csproj.CoreCompileInputs.cache
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\Restaurant_Booker_App.dll
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\refint\Restaurant_Booker_App.dll
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\Restaurant_Booker_App.pdb
+C:\Users\leo.liu\source\repos\Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App\obj\Debug\netstandard2.0\ref\Restaurant_Booker_App.dll
