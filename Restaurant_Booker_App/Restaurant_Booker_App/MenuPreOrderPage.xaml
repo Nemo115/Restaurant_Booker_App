@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant_Booker_App.MenuPreOrderPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout x:Name="menuOrderQuestion" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" Margin="0,0,0,10">
+                <Label Text="Would you like to order food right now?" HorizontalOptions="Center" Margin="0,0,0,15"/>
+                <Grid>
+                    <Button x:Name="yButton" Text="Yes" Clicked="yButton_Clicked"/>
+                    <Button x:Name="nButton" Text="No" Grid.Column="1" Clicked="nButton_Clicked"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout x:Name="menuGrid" IsVisible="False" Margin="20,0,20,20">
+                <Label Text="Menu" HorizontalOptions="Center" FontFamily="Times New Roman" FontSize="30" FontAttributes="Bold"/>
+                <ScrollView BackgroundColor="LightGray" HeightRequest="570">
+                    <StackLayout x:Name="menuScrollStack">
+                        
+                    </StackLayout>
+                </ScrollView>
+                <Button x:Name="orderButton" Text="Order" VerticalOptions="EndAndExpand" BackgroundColor="LightGray" HeightRequest="60" Opacity="0.68" Clicked="orderButton_Clicked"/>
+                <Button x:Name="skipMenuButton" Text="Skip" Clicked="nButton_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

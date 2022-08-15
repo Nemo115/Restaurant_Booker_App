@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant_Booker_App.Andro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant_Booker_App.iOS", "Restaurant_Booker_App\Restaurant_Booker_App.iOS\Restaurant_Booker_App.iOS.csproj", "{165D174F-A94B-485F-9F05-C1E86F45DFE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant_Booker_App", "Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App.csproj", "{22D5CBB3-1012-4503-83A5-26D3BC29CDA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant_Booker_App", "Restaurant_Booker_App\Restaurant_Booker_App\Restaurant_Booker_App.csproj", "{22D5CBB3-1012-4503-83A5-26D3BC29CDA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

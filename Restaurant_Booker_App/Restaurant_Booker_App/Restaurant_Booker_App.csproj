@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,7 +11,48 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\cumulus-1.png" />
+    <None Remove="images\Gimlet_2.png" />
+    <None Remove="images\grill-americano-1_1.png" />
+    <None Remove="images\Grossi.png" />
+    <None Remove="images\icons\infoButton.png" />
+    <None Remove="images\mono-xo-oysters-1.png" />
+    <None Remove="images\Poodle_1.png" />
+    <None Remove="images\SmithStBistrot_Melbourne_ScottPickett_2022.png" />
+    <None Remove="images\Supernormal_LobsterRoll.png" />
+    <None Remove="images\Vue.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="images\cumulus-1.png" />
+    <EmbeddedResource Include="images\Gimlet_2.png" />
+    <EmbeddedResource Include="images\grill-americano-1_1.png" />
+    <EmbeddedResource Include="images\Grossi.png" />
+    <EmbeddedResource Include="images\icons\infoButton.png" />
+    <EmbeddedResource Include="images\mono-xo-oysters-1.png" />
+    <EmbeddedResource Include="images\Poodle_1.png" />
+    <EmbeddedResource Include="images\SmithStBistrot_Melbourne_ScottPickett_2022.png" />
+    <EmbeddedResource Include="images\Supernormal_LobsterRoll.png" />
+    <EmbeddedResource Include="images\Vue.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="MapPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MenuPreOrderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="RegistrationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TableBookingRegistrationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

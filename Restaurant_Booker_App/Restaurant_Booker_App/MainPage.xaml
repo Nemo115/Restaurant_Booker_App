@@ -1,24 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Restaurant_Booker_App.MainPage">
-
+             x:Class="Restaurant_Booker_App.MainPage"
+             xmlns:local="clr-namespace:Restaurant_Booker_App;assembly=Restaurant_Booker_App"
+             NavigationPage.HasNavigationBar="False">
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <Grid BackgroundColor ="#333333" HeightRequest="60">
+            <Label Text="Booker Table" TextColor="#FFFFFF" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" FontSize="30"/>
+            <Button Text="Your Tables" TextColor="#000000" BackgroundColor="#9CFFAF" Grid.Column="1" Margin="40,10,10,10"/>
+        </Grid>
+        <Grid Padding="0,0,0,0" BackgroundColor="White" HeightRequest="65">
+            <SearchBar x:Name="SBGeneralLocation" Placeholder="General Location" Margin="0,0,0,10" />
+            <Picker x:Name="DPCuisine" Grid.Column="1" Margin="0,0,0,10" Title="Cuisine">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>All</x:String>
+                        <x:String>Italian</x:String>
+                        <x:String>Deli</x:String>
+                        <x:String>Burger</x:String>
+                        <x:String>Mexican</x:String>
+                        <x:String>Japanese</x:String>
+                        <x:String>Chinese</x:String>
+                        <x:String>SeaFood</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </Grid>
+        <ListView x:Name="restaurantList" RowHeight="100" ItemTapped="restaurantList_ItemSelected" SelectionMode="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Save"/>
+                        </ViewCell.ContextActions>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source = "{Binding imageUrl}" HeightRequest="50" WidthRequest="50"/>
+                            <StackLayout Spacing="0" Orientation="Vertical">
+                                <Label x:Name="restaurantName" Text = "{Binding Name}" FontSize="30"/>
+                                <Grid x:Name="cellGrid" ColumnSpacing="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="40"/>
+                                        <ColumnDefinition Width="50"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text ="Opening Times: " WidthRequest="50"/>
+                                    <Label x:Name="LBOpeningTimes" Grid.Column="1" Text="{Binding OpeningTimes}"/>
+                                    <Label x:Name="LBClosingTimes" Grid.Column="2" Text="{Binding ClosedTimes}"/>
+                                </Grid>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
-
 </ContentPage>
