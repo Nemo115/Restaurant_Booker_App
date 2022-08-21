@@ -19,7 +19,7 @@ namespace Restaurant_Booker_App
 
         private void proceedButton_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushModalAsync(new NavigationPage(new MainPage()));
         }
     }
 }

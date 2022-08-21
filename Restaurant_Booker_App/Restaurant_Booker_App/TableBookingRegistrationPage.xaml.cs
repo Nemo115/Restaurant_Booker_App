@@ -19,7 +19,7 @@ namespace Restaurant_Booker_App
 
         private void bookingButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new MainPage());
+            Navigation.PushModalAsync(new NavigationPage(new MainPage()));
         }
 
         private void cancelButton_Clicked(object sender, EventArgs e)

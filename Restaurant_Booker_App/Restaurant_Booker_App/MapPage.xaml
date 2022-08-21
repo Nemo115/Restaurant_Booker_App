@@ -4,37 +4,46 @@
              x:Class="Restaurant_Booker_App.MapPage"
              xmlns:local="clr-namespace:Restaurant_Booker_App;assembly=Restaurant_Booker_App">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="AliceBlue">
-            <StackLayout Margin="0,20,0,0" >
-                <Picker x:Name="TimeSelect" Margin="20,0,20,0" Title="Time" HeightRequest="50">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>9:00 AM</x:String>
-                            <x:String>10:00 AM</x:String>
-                            <x:String>1:00PM</x:String>
-                            <x:String>3:00PM</x:String>
-                            <x:String>4:30PM</x:String>
-                            <x:String>7:00PM</x:String>
-                            <x:String>7:30PM</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-            </StackLayout>
-
-            <Grid Margin="30,440,0,0">
-                <StackLayout x:Name="tableKey" VerticalOptions="EndAndExpand"  Opacity="0.7" IsVisible="False">
-                    <Label Text="Currently Available"/>
-                    <Label Text="Reserved later today"/>
-                    <Label Text="Unavailable"/>
+        <Grid>
+            <Image x:Name="mapImage" Source="{local:ImageResource Restaurant_Booker_App.images.tableMaps.Pmap2.jpg}" Aspect="AspectFit"/>
+            <Grid>
+                <!--<ImageButton Source="{local:ImageResource Restaurant_Booker_App.images.icons.Green.green3.png}" Margin="100,0,0,0"/>-->
+                <ImageButton Source="{local:ImageResource Restaurant_Booker_App.images.icons.Green.green3.png}" Padding="170" Margin="0,0,50,0"/>
+            </Grid>
+            <StackLayout Background="{local:ImageResource Restaurant_Booker_App.images.tableMaps.Pmap2.jpg}">
+                <StackLayout Margin="0,20,0,0" >
+                    <Picker x:Name="TimeSelect" Margin="20,0,20,0" Title="Time" HeightRequest="50">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>9:00 AM</x:String>
+                                <x:String>10:00 AM</x:String>
+                                <x:String>1:00PM</x:String>
+                                <x:String>3:00PM</x:String>
+                                <x:String>4:30PM</x:String>
+                                <x:String>7:00PM</x:String>
+                                <x:String>7:30PM</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
                 </StackLayout>
-                <ImageButton x:Name="infoButton" Source="{local:ImageResource Restaurant_Booker_App.images.icons.infoButton.png}" 
+                <Grid Margin="30,420,0,0" HeightRequest="100">
+                    <Grid x:Name="tableKey" VerticalOptions="EndAndExpand"  Opacity="0.7" IsVisible="False">
+                        <Label Text="Currently Available"/>
+                        <Image Source="{local:ImageResource Restaurant_Booker_App.images.icons.Green.green2.png}" Grid.Column="1"/>
+                        <Label Text="Reserved later today" Grid.Row="1"/>
+                        <Image Source="{local:ImageResource Restaurant_Booker_App.images.icons.Yellow.yellow2.png}" Grid.Row="1" Grid.Column="1"/>
+                        <Label Text="Unavailable" Grid.Row="2"/>
+                        <Image Source="{local:ImageResource Restaurant_Booker_App.images.icons.Red.red2.png}" Grid.Row="2" Grid.Column="1"/>
+                    </Grid>
+                    <ImageButton x:Name="infoButton" Source="{local:ImageResource Restaurant_Booker_App.images.icons.infoButton.png}" 
                          HeightRequest="40" Margin="0,0,30,0" VerticalOptions="EndAndExpand"
                          Clicked="infoButton_Clicked" HorizontalOptions="End"/>
-            </Grid>
-            <Grid x:Name="BottomBar" VerticalOptions="EndAndExpand" Margin="30,5,30,10">
-                <Button x:Name="BookButton" Text="Book/Pay and Book" BackgroundColor="LightGray" HeightRequest="60" Opacity="0.68"
+                </Grid>
+                <Grid x:Name="BottomBar" VerticalOptions="EndAndExpand" Margin="30,5,30,10">
+                    <Button x:Name="BookButton" Text="Book/Pay and Book" BackgroundColor="LightGray" HeightRequest="60" Opacity="0.68"
                         Clicked="BookButton_Clicked"/>
-            </Grid>
-        </StackLayout>
+                </Grid>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

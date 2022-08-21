@@ -15,12 +15,31 @@
     <None Remove="images\Gimlet_2.png" />
     <None Remove="images\grill-americano-1_1.png" />
     <None Remove="images\Grossi.png" />
+    <None Remove="images\icons\Green\green1.png" />
+    <None Remove="images\icons\Green\green2.png" />
+    <None Remove="images\icons\Green\green3.png" />
     <None Remove="images\icons\infoButton.png" />
+    <None Remove="images\icons\Red\red1.png" />
+    <None Remove="images\icons\Red\red2.png" />
+    <None Remove="images\icons\Red\red3.png" />
+    <None Remove="images\icons\Yellow\yellow1.png" />
+    <None Remove="images\icons\Yellow\yellow2.png" />
+    <None Remove="images\icons\Yellow\yellow3.png" />
     <None Remove="images\mono-xo-oysters-1.png" />
     <None Remove="images\Poodle_1.png" />
     <None Remove="images\SmithStBistrot_Melbourne_ScottPickett_2022.png" />
     <None Remove="images\Supernormal_LobsterRoll.png" />
+    <None Remove="images\tableMaps\1Pmap1.jpg" />
+    <None Remove="images\tableMaps\Pmap1.jpg" />
+    <None Remove="images\tableMaps\Pmap2.jpg" />
+    <None Remove="images\tableMaps\Pmap3.jpg" />
     <None Remove="images\Vue.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="images\icons\Green\green1.png" />
+    <EmbeddedResource Include="images\icons\Green\green2.png" />
+    <EmbeddedResource Include="images\icons\Green\green3.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,16 +48,29 @@
     <EmbeddedResource Include="images\grill-americano-1_1.png" />
     <EmbeddedResource Include="images\Grossi.png" />
     <EmbeddedResource Include="images\icons\infoButton.png" />
+    <EmbeddedResource Include="images\icons\Red\red1.png" />
+    <EmbeddedResource Include="images\icons\Red\red2.png" />
+    <EmbeddedResource Include="images\icons\Red\red3.png" />
+    <EmbeddedResource Include="images\icons\Yellow\yellow1.png" />
+    <EmbeddedResource Include="images\icons\Yellow\yellow2.png" />
+    <EmbeddedResource Include="images\icons\Yellow\yellow3.png" />
     <EmbeddedResource Include="images\mono-xo-oysters-1.png" />
     <EmbeddedResource Include="images\Poodle_1.png" />
     <EmbeddedResource Include="images\SmithStBistrot_Melbourne_ScottPickett_2022.png" />
     <EmbeddedResource Include="images\Supernormal_LobsterRoll.png" />
+    <EmbeddedResource Include="images\tableMaps\1Pmap1.jpg" />
+    <EmbeddedResource Include="images\tableMaps\Pmap2.jpg" />
+    <EmbeddedResource Include="images\tableMaps\Pmap3.jpg" />
     <EmbeddedResource Include="images\Vue.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\tableMaps\Pmap1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
